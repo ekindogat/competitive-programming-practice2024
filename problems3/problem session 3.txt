@@ -1,0 +1,7 @@
+PROBLEMS:
+https://www.hackerrank.com/domains/algorithms?filters%5Bstatus%5D%5B%5D=unsolved&filters%5Bstatus%5D%5B%5D=solved&filters%5Bsubdomains%5D%5B%5D=warmup&badge_type=problem-solving
+
+- A Very Big Sum
+- Diagonal Difference
+- Plus Minus
+- Staircase

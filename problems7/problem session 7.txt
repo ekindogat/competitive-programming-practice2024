@@ -1,0 +1,6 @@
+PROBLEMS:
+
+- Climbing the Leaderboard  (https://www.hackerrank.com/challenges/climbing-the-leaderboard/problem?isFullScreen=true)
+
+- Haftalık Problem 3    https://arsiv.cclub.metu.edu.tr/contest/2223w3/
+- Haftalık Problem 4    https://arsiv.cclub.metu.edu.tr/contest/2223w4/

@@ -1,0 +1,153 @@
+// problem: Basic Data Types
+#include <iostream>
+#include <cstdio>
+using namespace std;
+
+int main() {
+    // Complete the code.
+        int i;
+        long l;
+        char c;
+        float f;
+        double d;
+    scanf("%d %ld %c %f %lf", &i, &l, &c, &f, &d);
+    printf("%d\n%ld\n%c\n%f\n%lf", i, l, c, f, d);
+    return 0;
+}
+
+#include <iostream>
+#include <cstdio>
+using namespace std;
+void printEvenOdd(int n);
+void printNumber(int n);
+int main() {
+    // Complete the code.
+    int a, b;
+    cin >> a >> b;
+    
+    for (int i = a; i <= b; i++) {
+        printNumber(i);
+    }
+    
+    return 0;
+}
+
+void printNumber(int n){
+    switch (n) {
+        case 1:
+        printf("one\n");
+        break;
+        case 2:
+        printf("two\n");
+        break;
+        case 3:
+        printf("three\n");
+        break;
+        case 4:
+        printf("four\n");
+        break;
+        case 5:
+        printf("five\n");
+        break;
+        case 6:
+        printf("six\n");
+        break;
+        case 7:
+        printf("seven\n");
+        break;
+        case 8:
+        printf("eight\n");
+        break;
+        case 9:
+        printf("nine\n");
+        break;
+        default:
+        printf("%s\n", n%2 ? "odd" :"even");
+        }
+       
+}
+
+
+// Problem: Functions
+#include <iostream>
+#include <cstdio>
+using namespace std;
+
+/*
+Add `int max_of_four(int a, int b, int c, int d)` here.
+
+*/
+
+int max_of_four(int a, int b, int c, int d){
+    int max = a;
+    int arr[4] = {a, b, c, d};
+    for (int i = 1; i < 4; i++) {
+        if (arr[i] > max){
+            max = arr[i];
+        }
+    }
+    return max;
+}
+
+int main() {
+    int a, b, c, d;
+    scanf("%d %d %d %d", &a, &b, &c, &d);
+    int ans = max_of_four(a, b, c, d);
+    printf("%d", ans);
+    
+    return 0;
+}
+
+
+// Problem: Pointer
+#include <stdio.h>
+#include <stdlib.h>
+
+void update(int *a,int *b) {
+    // Complete this function
+    int temp = *a;
+    (*a) = temp + *b;
+    (*b) = std::abs((*b) - temp);
+}
+
+int main() {
+    int a, b;
+    int *pa = &a, *pb = &b;
+    
+    scanf("%d %d", &a, &b);
+    update(pa, pb);
+    printf("%d\n%d", a, b);
+
+    return 0;
+}
+
+// Problem: Stringstream
+#include <sstream>
+#include <vector>
+#include <iostream>
+using namespace std;
+
+vector<int> parseInts(string str) {
+	// Complete this function
+    vector<int> arr;
+    stringstream ss(str);
+    string token;
+    
+    while (getline(ss, token, ',')) {
+        arr.push_back(stoi(token));
+    }
+    
+    
+    return arr;
+}
+
+int main() {
+    string str;
+    cin >> str;
+    vector<int> integers = parseInts(str);
+    for(int i = 0; i < integers.size(); i++) {
+        cout << integers[i] << "\n";
+    }
+    
+    return 0;
+}

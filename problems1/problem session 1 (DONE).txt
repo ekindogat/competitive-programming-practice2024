@@ -1,0 +1,10 @@
+PROBLEMS: (FROM https://www.hackerrank.com/domains/cpp?filters%5Bsubdomains%5D%5B%5D=cpp-introduction&filters%5Bsubdomains%5D%5B%5D=cpp-strings)
+
+- Say "Hello, World!" With C++
+- Input and Output
+- Basic Data Types
+- Conditional Statements
+- For Loop
+- Functions
+- Pointer
+- Variable Sized Arrays
